@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { TodoListService } from './services/todo-list.service'
 
 import { AppComponent } from './app.component';
 import { InputButtonUnitComponent } from './input-button-unit/input-button-unit.component';
@@ -14,9 +15,9 @@ import { ListManagerComponent } from './list-manager/list-manager.component';
     ListManagerComponent
   ],
   imports: [
-    BrowserModule
+  BrowserModule
   ],
-  providers: [],
+  providers: [TodoListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
